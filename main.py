@@ -15,6 +15,9 @@ def main():
     apikey = os.environ.get('MAILGUN_APIKEY')
     domain= os.environ.get('MAILGUN_DOMAIN')
     sender_email= os.environ.get('MAILGUN_SENDER_EMAIL')
+
+    # DEFAULT VARIBLES
+    default_owner_id= os.environ.get("DEFAULT_OWNER_ID")
     
     conn = connect_to_db(dbname, user, password)
 
@@ -38,7 +41,13 @@ def main():
 
     if json_data:
         for record in json_data:
-            insert_classification(conn, record['database_name'], record['classification'], record['owner_id'])
+            classification = record['classification']
+            if classification == "":
+                classification="high"
+            owner_id = record['owner_id']
+            if owner_id == "":
+                owner_id=default_owner_id
+            insert_classification(conn, record['database_name'], classification, owner_id)
             print(f"Database Name: {record['database_name']}")
             print("-" * 40)
 
