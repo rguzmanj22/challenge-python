@@ -1,6 +1,6 @@
 from json_reader import read_json_file
 from csv_reader import read_csv_file
-from databse import connect_to_db, create_tables, insert_database, insert_user
+from databse import connect_to_db, create_tables, insert_database, insert_user, get_high_classification
 import os
 
 def main():
@@ -36,8 +36,13 @@ def main():
             print(f"Database Name: {record['database_name']}")
             print("-" * 40)
 
-    #TODO: Update database CSV with low, medium and high values
-    #TODO: get all databases with high classification
+    high_classifications = get_high_classification(conn)
+
+    # Output the results
+    for row in high_classifications:
+        print(row[-1])
+
+    
     #TODO: for each record send and email
         #TODO: Create send email function
 

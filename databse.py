@@ -74,3 +74,23 @@ def insert_database(conn, name, classification, owner_id):
     ''', (name, classification, owner_id))
     conn.commit()
     print("Database inserted successfully")
+
+def get_high_classification(conn):
+    
+    cursor = conn.cursor()
+
+    query = """
+    SELECT db.id, db.name, db.classification, u.user_id as owner_id, u2.user_id as manager_id, u2.email as manager_email
+    FROM classifications AS db
+    INNER JOIN users AS u
+    ON db.owner_id = u.user_id
+    INNER JOIN users AS u2
+    ON u.user_manager_id = u2.user_id
+    WHERE db.classification = 'high';
+    """
+
+    cursor.execute(query)
+
+    results = cursor.fetchall()
+    return results
+
