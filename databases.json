@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "database_name": "Customer Data",
+        "classification": "Confidential",
+        "created_by": "admin",
+        "created_at": "2024-10-21",
+        "description": "Data containing personal customer information including contact details.",
+        "owner_id": 101
+    },
+    {
+        "id": 2,
+        "database_name": "Sales Reports",
+        "classification": "Internal",
+        "created_by": "sales_manager",
+        "created_at": "2024-10-19",
+        "description": "Monthly sales performance reports.",
+        "owner_id": 102
+    },
+    {
+        "id": 3,
+        "database_name": "Employee Records",
+        "classification": "Confidential",
+        "created_by": "hr_manager",
+        "created_at": "2024-10-18",
+        "description": "HR data containing personal employee details and payroll.",
+        "owner_id": 103
+    },
+    {
+        "id": 4,
+        "database_name": "Marketing Strategy",
+        "classification": "Restricted",
+        "created_by": "marketing_director",
+        "created_at": "2024-10-17",
+        "description": "Strategic marketing plan for product launches.",
+        "owner_id": 104
+    },
+    {
+        "id": 5,
+        "database_name": "Vendor Contracts",
+        "classification": "Confidential",
+        "created_by": "legal_team",
+        "created_at": "2024-10-16",
+        "description": "Legal contracts with vendors and suppliers.",
+        "owner_id": 105
+    },
+    {
+        "id": 6,
+        "database_name": "Product Design Documents",
+        "classification": "Restricted",
+        "created_by": "engineering_team",
+        "created_at": "2024-10-15",
+        "description": "Blueprints and technical documentation of new products.",
+        "owner_id": 106
+    },
+    {
+        "id": 7,
+        "database_name": "Financial Statements",
+        "classification": "Internal",
+        "created_by": "finance_department",
+        "created_at": "2024-10-14",
+        "description": "Quarterly financial reports and projections.",
+        "owner_id": 107
+    },
+    {
+        "id": 8,
+        "database_name": "Compliance Documents",
+        "classification": "Confidential",
+        "created_by": "compliance_officer",
+        "created_at": "2024-10-13",
+        "description": "Documents related to regulatory compliance and audits.",
+        "owner_id": 108
+    },
+    {
+        "id": 9,
+        "database_name": "R&D Project Files",
+        "classification": "Restricted",
+        "created_by": "rd_team",
+        "created_at": "2024-10-12",
+        "description": "Research and development project details and progress.",
+        "owner_id": 109
+    },
+    {
+        "id": 10,
+        "database_name": "IT Infrastructure Logs",
+        "classification": "Internal",
+        "created_by": "it_admin",
+        "created_at": "2024-10-11",
+        "description": "System and server logs from IT infrastructure.",
+        "owner_id": 110
+    },
+    {
+        "id": 11,
+        "database_name": "Customer Support Tickets",
+        "classification": "Confidential",
+        "created_by": "support_team",
+        "created_at": "2024-10-10",
+        "description": "Customer support queries and resolutions.",
+        "owner_id": 111
+    },
+    {
+        "id": 12,
+        "database_name": "Inventory Management",
+        "classification": "Internal",
+        "created_by": "inventory_manager",
+        "created_at": "2024-10-09",
+        "description": "Database for tracking product stock levels and movements.",
+        "owner_id": 112
+    },
+    {
+        "id": 13,
+        "database_name": "Supplier Information",
+        "classification": "Confidential",
+        "created_by": "procurement_team",
+        "created_at": "2024-10-08",
+        "description": "Data on suppliers, including contact details and contracts.",
+        "owner_id": 113
+    },
+    {
+        "id": 14,
+        "database_name": "Project Management",
+        "classification": "Internal",
+        "created_by": "project_manager",
+        "created_at": "2024-10-07",
+        "description": "Details on ongoing projects, timelines, and resource allocations.",
+        "owner_id": 114
+    },
+    {
+        "id": 15,
+        "database_name": "Client Feedback",
+        "classification": "Confidential",
+        "created_by": "customer_relations",
+        "created_at": "2024-10-06",
+        "description": "Feedback and reviews from clients.",
+        "owner_id": 115
+    },
+    {
+        "id": 16,
+        "database_name": "Audit Logs",
+        "classification": "Restricted",
+        "created_by": "security_team",
+        "created_at": "2024-10-05",
+        "description": "Logs related to internal and external audits.",
+        "owner_id": 116
+    },
+    {
+        "id": 17,
+        "database_name": "Software License Agreements",
+        "classification": "Confidential",
+        "created_by": "legal_team",
+        "created_at": "2024-10-04",
+        "description": "Contracts and agreements for software licensing.",
+        "owner_id": 117
+    },
+    {
+        "id": 18,
+        "database_name": "Payroll Data",
+        "classification": "Confidential",
+        "created_by": "finance_team",
+        "created_at": "2024-10-03",
+        "description": "Information on employee salaries and benefits.",
+        "owner_id": 118
+    },
+    {
+        "id": 19,
+        "database_name": "Customer Survey Results",
+        "classification": "Internal",
+        "created_by": "marketing_team",
+        "created_at": "2024-10-02",
+        "description": "Results from customer satisfaction surveys.",
+        "owner_id": 119
+    },
+    {
+        "id": 20,
+        "database_name": "Incident Response Logs",
+        "classification": "Restricted",
+        "created_by": "incident_response_team",
+        "created_at": "2024-10-01",
+        "description": "Records of incidents and their resolutions.",
+        "owner_id": 120
+    }
+]
