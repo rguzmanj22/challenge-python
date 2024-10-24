@@ -38,7 +38,7 @@
     {
         "id": 5,
         "database_name": "Vendor Contracts",
-        "classification": "high",
+        "classification": "low",
         "created_by": "legal_team",
         "created_at": "2024-10-16",
         "description": "Legal contracts with vendors and suppliers.",
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "database_name": "Compliance Documents",
-        "classification": "high",
+        "classification": "low",
         "created_by": "compliance_officer",
         "created_at": "2024-10-13",
         "description": "Documents related to regulatory compliance and audits.",
@@ -92,7 +92,7 @@
     {
         "id": 11,
         "database_name": "Customer Support Tickets",
-        "classification": "high",
+        "classification": "low",
         "created_by": "support_team",
         "created_at": "2024-10-10",
         "description": "Customer support queries and resolutions.",
@@ -110,7 +110,7 @@
     {
         "id": 13,
         "database_name": "Supplier Information",
-        "classification": "high",
+        "classification": "low",
         "created_by": "procurement_team",
         "created_at": "2024-10-08",
         "description": "Data on suppliers, including contact details and contracts.",
@@ -128,7 +128,7 @@
     {
         "id": 15,
         "database_name": "Client Feedback",
-        "classification": "high",
+        "classification": "low",
         "created_by": "customer_relations",
         "created_at": "2024-10-06",
         "description": "Feedback and reviews from clients.",
@@ -146,7 +146,7 @@
     {
         "id": 17,
         "database_name": "Software License Agreements",
-        "classification": "high",
+        "classification": "low",
         "created_by": "legal_team",
         "created_at": "2024-10-04",
         "description": "Contracts and agreements for software licensing.",
@@ -159,21 +159,21 @@
         "created_by": "finance_team",
         "created_at": "2024-10-03",
         "description": "Information on employee salaries and benefits.",
-        "owner_id": 118
+        "owner_id": ""
     },
     {
         "id": 19,
         "database_name": "Customer Survey Results",
-        "classification": "low",
+        "classification": "high",
         "created_by": "marketing_team",
         "created_at": "2024-10-02",
         "description": "Results from customer satisfaction surveys.",
-        "owner_id": 119
+        "owner_id": ""
     },
     {
         "id": 20,
         "database_name": "Incident Response Logs",
-        "classification": "medium",
+        "classification": "",
         "created_by": "incident_response_team",
         "created_at": "2024-10-01",
         "description": "Records of incidents and their resolutions.",
