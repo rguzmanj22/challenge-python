@@ -27,7 +27,7 @@ def create_tables(conn):
         );
     ''')
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS Databases (
+        CREATE TABLE IF NOT EXISTS Classifications (
             id SERIAL PRIMARY KEY,
             name VARCHAR NOT NULL,
             classification VARCHAR NOT NULL,
@@ -69,7 +69,7 @@ def insert_database(conn, name, classification, owner_id):
     """
     cursor = conn.cursor()
     cursor.execute('''
-        INSERT INTO Databases (name, classification, owner_id)
+        INSERT INTO Classifications (name, classification, owner_id)
         VALUES (%s, %s, %s);
     ''', (name, classification, owner_id))
     conn.commit()
