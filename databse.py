@@ -1,11 +1,12 @@
 import pg8000
 
-def connect_to_db(dbname='postgres', user='postgres', password='postgres', host='localhost', port=5432):
+def connect_to_db(dbname, user, password, host='db', port=5432):
     """
     Connect to the PostgreSQL database.
     """
     try:
         conn = pg8000.connect(database=dbname, user=user, password=password, host=host, port=port) 
+        
         print("Connection successful")
         return conn
     except pg8000.ProgrammingError as e:

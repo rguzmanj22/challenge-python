@@ -1,17 +1,15 @@
-# Imagen de Python oficial
-FROM python:3
+# Usa una imagen de Python como base
+FROM python:3.10
 
-# Directorio sobre el cual va a trabajar
-WORKDIR /app
+# Establece el directorio de trabajo dentro del contenedor
+WORKDIR /usr/src/app
 
-# Copiar archivo de requerimientos al directorio de trabajo
-COPY requirements.txt /app
-
-# Instalar dependencias
+# Copia requirements.txt e instala las dependencias
+COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
-# Copiar código fuente a directorio de trabajo
-COPY . /app
+# Copia el resto de los archivos de tu proyecto al contenedor
+COPY . .
 
-# Ejecutar script
-CMD [ "python", "main.py" ]
+# Comando por defecto para ejecutar el archivo principal
+CMD ["python", "main.py"]

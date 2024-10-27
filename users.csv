@@ -1,6 +1,6 @@
 row_id,user_id,user_state,user_manager,email
-1,101,active,102,user101@company.com
-2,102,active,116,raul.guzman.jaramillo@gmail.com
+1,101,inactive,102,user101@company.com
+2,102,active,116,challenge2024@yopmail.com
 3,103,active,118,user103@company.com
 4,104,active,117,user104@company.com
 5,105,active,120,user105@company.com
@@ -16,6 +16,6 @@ row_id,user_id,user_state,user_manager,email
 15,115,inactive,104,user115@company.com
 16,116,inactive,120,user116@company.com
 17,117,inactive,109,user117@company.com
-18,118,active,103,raul.guzman.jaramillo@gmail.com
+18,118,active,103,challenge2024@yopmail.com
 19,119,inactive,102,user119@company.com
 20,120,inactive,118,user120@company.com

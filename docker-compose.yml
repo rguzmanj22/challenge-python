@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  challengeapp:
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - MAILGUN_APIKEY=6b7a00e2092b0f1cbe849526297b5a99-784975b6-79b85e21
+      - MAILGUN_DOMAIN=sandboxea1a6b8644254fb285b798799038c4b3.mailgun.org
+      - MAILGUN_SENDER_EMAIL=aprilsmilingforce@gmail.com
+      - DEFAULT_OWNER_ID=101
+  db:
+    container_name: reto_meli
+    image: postgres:16.2
+    restart: always
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
